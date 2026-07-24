@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 StudyMate AI
 
-## Getting Started
+StudyMate AI is an AI-powered study companion designed for university students. It helps students organize notes, plan study tasks, generate quizzes, and get AI-powered explanations for academic topics.
 
-First, run the development server:
+---
+
+# 📌 Problem Statement
+
+Many students use multiple apps for notes, quizzes, planning, and study help. This wastes time and reduces productivity.
+
+StudyMate AI solves this problem by providing all essential study tools in one application.
+
+---
+
+# 🌐 Live Demo
+
+**Live App:** https://studymate-ai-virid-five.vercel.app
+
+> Replace the above URL with your actual Vercel deployment link.
+
+---
+
+# ✨ Features
+
+- 📝 Smart Notes (Add, Edit, Delete, Search & Download)
+- 📅 Study Planner
+- 🧠 Quiz Generator
+- 🤖 AI Study Assistant (Gemini API)
+- 📊 Dashboard with Progress Tracking
+- 🔐 Login & Signup Interface
+- 📱 Responsive User Interface
+- ---
+
+# 🤖 AI Feature
+
+StudyMate AI includes an AI Assistant powered by Google's Gemini API.
+
+### AI Capabilities
+
+- Explains study topics in simple English.
+- Generates structured answers with headings and bullet points.
+- Creates multiple-choice questions (MCQs).
+- Generates study plans.
+- Summarizes study notes.
+
+### System Prompt
+
+The AI is instructed to:
+
+- Answer in simple English.
+- Use headings and bullet points.
+- Keep responses clean and easy to read.
+- Generate MCQs with correct answers.
+- Create study plans and summaries when requested.
+
+---
+
+# 🛠️ Technologies Used
+
+- Next.js
+- React.js
+- Tailwind CSS
+- JavaScript
+- Google Gemini API
+- Git
+- GitHub
+- Vercel
+
+---
+
+# 🚀 How to Run the Project
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/marmansajjad123-eng/studymate-ai.git
+```
+
+2. Open the project
+
+```bash
+cd studymate-ai
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 📸 Screenshots
 
-## Learn More
+Add at least 3 screenshots of your application here.
 
-To learn more about Next.js, take a look at the following resources:
+### Home Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="screenshots/home.png" width="800">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Dashboard
 
-## Deploy on Vercel
+<img src="screenshots/dashboard.png" width="800">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### AI Assistant
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<img src="screenshots/assistant.png" width="800">
+
+> Create a folder named **screenshots** in your GitHub repository and upload your images there. Then these screenshots will automatically appear in the README.
+
+---
+
+# 👨‍💻 Developer
+
+**Name:** M Arman Sajjad
+
+**Project:** StudyMate AI
+
+**Repository:**  
+https://github.com/marmansajjad123-eng/studymate-ai
+
+---
+
+# 📄 License
+
+This project was developed as an individual university final project for educational purposes.
