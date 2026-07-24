@@ -2,14 +2,24 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Dashboard() {
+  const router = useRouter();
+
   const [notesCount, setNotesCount] = useState(0);
   const [tasksCount, setTasksCount] = useState(0);
   const [quizCount, setQuizCount] = useState(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    const isLoggedIn = localStorage.getItem("studymate_loggedIn");
+
+    if (isLoggedIn !== "true") {
+      router.replace("/login");
+      return;
+    }
+
     const notes =
       JSON.parse(localStorage.getItem("studymate_notes")) || [];
 
@@ -32,7 +42,7 @@ export default function Dashboard() {
         Math.round((completed / tasks.length) * 100)
       );
     }
-  }, []);
+  }, [router]);
 
   const cards = [
     {
@@ -89,7 +99,8 @@ export default function Dashboard() {
             Home
           </Link>
         </div>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
 
           <div className="bg-white rounded-2xl shadow-lg p-6">
             <h2 className="text-gray-500">Notes</h2>
@@ -139,10 +150,7 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {cards.map((card) => (
-            <Link
-              key={card.title}
-              href={card.link}
-            >
+            <Link key={card.title} href={card.link}>
               <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-6 cursor-pointer h-full">
 
                 <div
