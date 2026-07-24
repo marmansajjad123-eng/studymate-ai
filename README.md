@@ -103,17 +103,15 @@ http://localhost:3000
 
 ### Home Page
 
-<img src="screenshots/home.png" width="800">
+![Home Page](HomePage.png)
 
 ### Dashboard
 
-<img src="screenshots/dashboard.png" width="800">
+![Dashboard](DashBoard.png)
 
 ### AI Assistant
 
-<img src="screenshots/assistant.png" width="800">
-
----
+![AI Assistant](Assistant.png)
 
 # 👨‍💻 Developer
 
