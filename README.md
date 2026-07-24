@@ -16,8 +16,6 @@ StudyMate AI solves this problem by providing all essential study tools in one a
 
 **Live App:** https://studymate-ai-virid-five.vercel.app
 
-> Replace the above URL with your actual Vercel deployment link.
-
 ---
 
 # ✨ Features
@@ -103,8 +101,6 @@ http://localhost:3000
 
 # 📸 Screenshots
 
-Add at least 3 screenshots of your application here.
-
 ### Home Page
 
 <img src="screenshots/home.png" width="800">
@@ -116,8 +112,6 @@ Add at least 3 screenshots of your application here.
 ### AI Assistant
 
 <img src="screenshots/assistant.png" width="800">
-
-> Create a folder named **screenshots** in your GitHub repository and upload your images there. Then these screenshots will automatically appear in the README.
 
 ---
 
